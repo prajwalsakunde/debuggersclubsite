@@ -2,7 +2,7 @@ import {BrowserRouter , Routes , Route} from 'react-router-dom';
 import './App.css'
 import Startpg from './components/startpage';
 import NavBar from './components/navbar';
-
+import EventInfoCard from './components/EventInfoCard';
 function App() {
   
   return (
