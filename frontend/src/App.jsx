@@ -11,6 +11,7 @@ function App() {
       <NavBar />
       <Routes>
               <Route path='/' element={<Startpg />} />
+              <Route path='/event' element={<EventInfoCard/>} />
       </Routes>
       </BrowserRouter>
     </main>
