@@ -31,7 +31,7 @@ function NavBar() {
   // </Link>
   // </div>
   return (
-    <nav className="bg-white px-10 py-4 flex flex-col items-center sm:flex-row justify-between">
+    <nav className="bg-white px-10 pt-3 pb-7 flex flex-col items-center sm:flex-row justify-between">
      <div className="pt-2">
           <Link to="/">
           <img src={debuggers} className="" alt="Logo" />  
@@ -51,7 +51,7 @@ function NavBar() {
         } flex-col sm:flex-row items-center space-y-1 sm:space-y-0  sm:flex `}
       > 
         <NavLink
-          to="/event"
+          to="/"
           className={`text-lg font-extralight hover:font-semibold hover:text-black mr-0 sm:ml-10  sm:mr-32 ${
             activeTab === "event" ? "text-black font-semibold" : "text-lg font-extralight text-black"
           }`}
@@ -60,7 +60,7 @@ function NavBar() {
           Event
         </NavLink>
         <NavLink
-          to="/members"
+          to="/"
           className={`text-lg font-extralight hover:font-semibold hover:text-black sm:mr-32 ${
             activeTab === "members" ? "text-black font-semibold" : "text-lg font-extralight text-black"
           }`}
@@ -70,7 +70,7 @@ function NavBar() {
         </NavLink>
         
         <NavLink
-          to="/contact"
+          to="/"
           className={`text-lg font-extralight hover:font-semibold hover:text-black sm:mr-8 ${
             activeTab === "contact" ? "text-black font-semibold" : "text-lg font-extralight text-black"
           }`}
