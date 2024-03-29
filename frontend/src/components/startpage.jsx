@@ -38,14 +38,18 @@ const Startpg = () => {
             <div className="p-1 sm:p-2 bg-gradient-to-r from-indigo-200 from-10%  via-sky-200 via-40% to-fuchsia-100 to-90% ">
                 
             </div>
-            <div className="container relative mt-5 font-sans font-light text-4xl sm:text-6xl md:text-7xl">
-                <div className="text-wrapper absolute top-16 sm:top-24 md:top-40 left-28 sm:left-20 ">
+            <div className="relative mt-5 items-center ">
+                <div className="text-wrapper relative top-20 sm:top-40 items-center font-sans font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-10xl ">
                     <p>Debuggers' Club</p>
                     <p>Run by the student</p>
                     <p>for the students</p>
                     <p>of the student</p>
                 </div>
             </div>
+            <div>
+
+            </div>
+
         </main>
     );
 }
