@@ -34,21 +34,28 @@ const Startpg = () => {
     }, []); // Empty dependency array ensures this effect runs only once after the initial render
 
     return (
-        <main>
+        <main className="overflow-hidden">
             <div className="p-1 sm:p-2 bg-gradient-to-r from-indigo-200 from-10%  via-sky-200 via-40% to-fuchsia-100 to-90% ">
                 
             </div>
-            <div className="relative mt-5 items-center ">
-                <div className="text-wrapper relative top-20 sm:top-40 items-center font-sans font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-10xl ">
+           <div className="relative ">
+            
+            <div className="flex justify-center relative mt-5 items-center ">
+                <div className="w-full h-screen text-wrapper relative top-20 sm:top-40 items-center font-sans font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-10xl ">
                     <p>Debuggers' Club</p>
                     <p>Run by the student</p>
                     <p>for the students</p>
                     <p>of the student</p>
                 </div>
             </div>
-            <div>
+            <div className="flex justify-center relative w-full h-screen ">
 
+            <div className="absolute  text-center ">
+                <h2 className="text-3xl font-bold">Event</h2>
+                <p className="mt-2 text-lg">Event section content goes here.</p>
             </div>
+            </div>
+            </div> 
 
         </main>
     );
