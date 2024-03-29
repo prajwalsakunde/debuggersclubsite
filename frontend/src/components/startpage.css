@@ -1,0 +1,10 @@
+p{
+    
+    text-align: center;
+    color: #000;
+    line-height: 0;
+
+    &:nth-of-type(4){
+        color:#67C6E3;
+    }
+}
