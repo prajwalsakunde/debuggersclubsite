@@ -1,6 +1,7 @@
 import "./startpage.css";
 import { gsap } from "gsap";
 import { useLayoutEffect } from "react";
+import { Link } from "react-router-dom";
 import SplitTextJS from "split-text-js";
 
 const Startpg = () => {
@@ -42,10 +43,12 @@ const Startpg = () => {
             
             <div className="flex justify-center relative mt-5 items-center ">
                 <div className="w-full h-screen text-wrapper relative top-20 sm:top-40 items-center font-sans font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-10xl ">
+                <Link>
                     <p>Debuggers' Club</p>
                     <p>Run by the student</p>
                     <p>for the students</p>
                     <p>of the student</p>
+                </Link>
                 </div>
             </div>
             <div className="flex justify-center relative w-full h-screen ">
