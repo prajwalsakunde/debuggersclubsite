@@ -6,6 +6,7 @@ import AnimCursor from './components/Animatedcursor';
 //import EventInfoCard from './components/EventInfoCard';
 import {Scrollbars} from 'react-custom-scrollbars';
 
+
 function App() {
   
   return (
@@ -17,8 +18,7 @@ function App() {
       <NavBar />
       <Routes>
               <Route path='/' element={<Startpg />} />
-              
-              {/* <Route path='/event' element={<EventInfoCard/>} /> */}
+            
       </Routes>
       </BrowserRouter>
       </Scrollbars>

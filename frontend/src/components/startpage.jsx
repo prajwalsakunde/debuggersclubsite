@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import SplitTextJS from "split-text-js";
+import Members from "./members";
 
 const Startpg = () => {
     useLayoutEffect(() => {
@@ -41,7 +42,7 @@ const Startpg = () => {
             </div>
            <div className="relative ">
             
-            <div className="flex justify-center relative mt-5 items-center ">
+            <div id="start" className=" flex justify-center relative mt-5 items-center ">
                 <div className="w-full h-screen text-wrapper relative top-20 sm:top-40 items-center font-sans font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-10xl ">
                 <Link>
                     <p>Debuggers' Club</p>
@@ -51,13 +52,21 @@ const Startpg = () => {
                 </Link>
                 </div>
             </div>
-            <div className="flex justify-center relative w-full h-screen ">
+            <div id="event" className="flex justify-center relative w-full h-screen ">
 
             <div className="absolute  text-center ">
                 <h2 className="text-3xl font-bold">Event</h2>
                 <p className="mt-2 text-lg">Event section content goes here.</p>
             </div>
             </div>
+            <div className="flex justify-center relative w-full h-screen ">
+          <div className="absolute  text-center ">
+            <h2 className="text-3xl font-bold">Members</h2>
+            <p className="mt-2 text-lg">Members of the 2024 Debuggers Club.</p>
+          </div>
+          <Members />
+        </div>
+
             </div> 
 
         </main>
