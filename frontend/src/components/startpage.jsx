@@ -3,10 +3,6 @@ import "./startpage.css";
 import { gsap } from "gsap";
 import { useLayoutEffect } from "react";
 import SplitTextJS from "split-text-js";
-<<<<<<< HEAD
-import Members from "./members";
-=======
->>>>>>> b2850fff9d69a95910860cf20802559543576157
 const Startpg = () => {
   useLayoutEffect(() => {
     const tl = gsap.timeline({ repeat: -1 });
@@ -64,19 +60,6 @@ const Startpg = () => {
           </div>
         </div>
 
-<<<<<<< HEAD
-        <div className="flex justify-center relative w-full h-screen ">
-          <div className="absolute  text-center ">
-            <h2 className="text-3xl font-bold">Members</h2>
-            <p className="mt-2 text-lg">Members of the 2024 Debuggers Club.</p>
-          </div>
-          <Members />
-        </div>
-      </div>
-    </main>
-  );
-};
-=======
     return (
         <main className="overflow-hidden">
            
@@ -97,6 +80,5 @@ const Startpg = () => {
         </main>
     );
 }
->>>>>>> b2850fff9d69a95910860cf20802559543576157
 
 export default Startpg;
