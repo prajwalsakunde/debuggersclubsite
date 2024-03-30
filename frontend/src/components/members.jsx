@@ -1,7 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import { CiLinkedin } from "react-icons/ci";
 import "slick-carousel/slick/slick-theme.css";
+import { FaInstagram } from "react-icons/fa";
+
 const membersData = [
   { id:1,
     name: "Om Patil",
@@ -37,6 +40,7 @@ const members = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
+    speed:2000,
     pauseOnHover: true,
     responsive: [
       {
@@ -73,25 +77,35 @@ const members = () => {
       <h2 className="text-3xl font-bold">Members</h2>
       <p className="mt-2 text-lg">Members of the 2024 Debuggers Club.</p>
     </div> 
-    <div className="w-3/4 m-auto">
+    <div className="w-4/5 gap-4 m-20">
       <div className="mt-20">
         <Slider {...settings}>
           {membersData.map((d) => (
-            <div className="bg-white h-[450px] text-black rounded-xl" key={d.id}>
-              <div className="h-56 rounded-t-xl flex justify-center items-center ">
+            <div className="bg-white  text-black font-sans " key={d.id}>
+              <div className="h-62  flex justify-center items-center ">
                 <img
                   src={d.img}
                   className="h-44 w-44 rounded-full"
-                  alt="image not loading"
+                  alt="img"
                 />
               </div>
 
               <div className="flex flex-col justify-center items-center gap-4 p-4">
                 <p className="text-xl font-semibold">{d.name}</p>
-                <p>{d.position}</p>
-                <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl">
-                  Link
-                </button>
+                <p>{d.position} </p>
+                <div className="flex flex-row gap-10">
+                  <a>
+                  <div className="flex flex-row">
+                  <CiLinkedin  />
+                  </div>
+                  </a>
+                  <a>
+                  <div  className="flex flex-row" >
+                  <FaInstagram/>  
+                  </div>
+                  </a>
+
+                </div>
               </div>
             </div>
           ))}
