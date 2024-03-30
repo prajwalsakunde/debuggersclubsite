@@ -1,29 +1,26 @@
-import {BrowserRouter , Routes , Route} from 'react-router-dom';
-import './App.css'
+import React from 'react';
+import './App.css';
 import Startpg from './components/startpage';
 import NavBar from './components/navbar';
 import AnimCursor from './components/Animatedcursor';
-//import EventInfoCard from './components/EventInfoCard';
-import {Scrollbars} from 'react-custom-scrollbars';
+import { Scrollbars } from 'react-custom-scrollbars';
+import Members from './components/members';
+import Eventpg from './components/Eventpg';
+import Contactpg from './components/Contactpg';
 
 function App() {
-  
   return (
-    <main className='body w-screen h-screen bg-white '>
+    <div className='main-body w-screen h-screen bg-white '>
       <Scrollbars>
-
-      <BrowserRouter>
-        <AnimCursor  />
-      <NavBar />
-      <Routes>
-              <Route path='/' element={<Startpg />} />
-              
-              {/* <Route path='/event' element={<EventInfoCard/>} /> */}
-      </Routes>
-      </BrowserRouter>
+        <AnimCursor />
+        <NavBar />
+        <Startpg />
+        <Eventpg />
+        <Members />
+        <Contactpg />
       </Scrollbars>
-    </main>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

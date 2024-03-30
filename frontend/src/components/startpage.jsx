@@ -1,9 +1,12 @@
+import React from "react";
 import "./startpage.css";
 import { gsap } from "gsap";
 import { useLayoutEffect } from "react";
-import { Link } from "react-router-dom";
 import SplitTextJS from "split-text-js";
+<<<<<<< HEAD
 import Members from "./members";
+=======
+>>>>>>> b2850fff9d69a95910860cf20802559543576157
 const Startpg = () => {
   useLayoutEffect(() => {
     const tl = gsap.timeline({ repeat: -1 });
@@ -61,6 +64,7 @@ const Startpg = () => {
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="flex justify-center relative w-full h-screen ">
           <div className="absolute  text-center ">
             <h2 className="text-3xl font-bold">Members</h2>
@@ -72,5 +76,27 @@ const Startpg = () => {
     </main>
   );
 };
+=======
+    return (
+        <main className="overflow-hidden">
+           
+           <div className="relative ">
+            
+            <div id='start1' className="start1 flex justify-center relative mt-5 items-center ">
+                <div className="w-full h-screen text-wrapper relative top-20 sm:top-40 items-center font-sans font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-10xl ">
+                <a>
+                    <p>Debuggers' Club</p>
+                    <p>Run by the student</p>
+                    <p>for the students</p>
+                    <p>of the student</p>
+                </a>
+                </div>
+                </div>
+            </div> 
+
+        </main>
+    );
+}
+>>>>>>> b2850fff9d69a95910860cf20802559543576157
 
 export default Startpg;
