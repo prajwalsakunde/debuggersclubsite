@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import logo from "../assets/logo.png";
 import debuggers from '../assets/debuggers.png';
@@ -13,7 +12,7 @@ function NavBar() {
   };
 
   return (
-    <>
+    <div className="fixed top-0 left-0 right-0 z-50">
       <nav className="bg-white px-10 pt-3 pb-5 flex flex-col items-center sm:flex-row justify-between">
         <div className="pt-2 flex items-center">
           <img src={logo} className="w-14 h-14 ml-2 mr-7" alt="logo" />
@@ -61,8 +60,8 @@ function NavBar() {
           </Link>
         </div>  
       </nav>
-      <div className=" p-1 sm:p-2 bg-gradient-to-r from-indigo-200 from-10%  via-sky-200 via-40% to-fuchsia-100 to-90% "></div>
-    </>
+      <div className="p-1 sm:p-2 bg-gradient-to-r from-indigo-200 from-10%  via-sky-200 via-40% to-fuchsia-100 to-90%"></div>
+    </div>
   );
 }
 

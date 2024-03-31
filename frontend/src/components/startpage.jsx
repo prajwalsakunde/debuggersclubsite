@@ -70,7 +70,7 @@ const Startpg = () => {
               <a>
 
               <div className="mb-7">
-              <h2 className=" text-3xl font-mono font-light">Inside the Debuggers Club Get to Know Us </h2>
+              <h2 className=" text-3xl font-mono font-light">Inside the <span className=" text-sky-600">Club</span> Get to Know Us </h2>
               </div>
               <section className="inline text-xl font-extralight font-mono ">
                 <ReactTextTransition >
