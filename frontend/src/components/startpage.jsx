@@ -3,6 +3,7 @@ import "./startpage.css";
 import { gsap } from "gsap";
 import ReactTextTransition from 'react-text-transition';
 import SplitTextJS from "split-text-js";
+import backgdimg from '../assets/background.gif'
 
 const Startpg = () => {
   const [paragraphIndex, setParagraphIndex] = useState(0);
@@ -58,25 +59,27 @@ const Startpg = () => {
   return (
     <main className="my-10 relative overflow-hidden w-screen h-screen">
       <div id="start1" className="start1 flex justify-center w-screen h-screen relative mt-5 items-center">
-        <div className="w-full flex flex-col h-full text-wrapper relative top-40 sm:top-60 items-center font-sans font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-10xl ">
+        <div className=" absolute top-72 right-36 w-1/4 h-1/4 hidden xl:block">
+          <img src={backgdimg} alt="BAVKROUND IMG" />
+        </div>
+        <div className="w-full flex flex-col h-full text-wrapper justify-center sm:justify-normal relative sm:top-60 items-center font-sans font-light text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-10xl ">
           <a>
             <p>Debuggers' Club</p>
             <p>Run by the student</p>
             <p>for the students</p>
             <p>of the student</p>
           </a>
-          <div className="relative mx-10 top-60 flex flex-col text-3xl font-sens font-medium">
-            <section className="text-center">
+          <div className="relative mx-28 top-28 md:top-40 lg:top-62 xl:top-72 2xl:top-80 flex flex-col text-3xl font-sens font-medium">
+            <section className="text-center text-lg sm:text-xl md:text-3xl ">
               <a>
-
-              <div className="mb-7">
-              <h2 className=" text-3xl font-mono font-light">Inside the <span className=" text-sky-600">Club</span> Get to Know Us </h2>
-              </div>
-              <section className="inline text-xl font-extralight font-mono ">
-                <ReactTextTransition >
-                  {paragraphs[paragraphIndex]}
+                <div className="mb-7">
+                  <h2 className=" font-mono font-light">Inside the <span className=" text-sky-600">Club</span> Get to Know Us </h2>
+                </div>
+                <section className="inline text-sm sm:text-lg md:text-xl font-extralight font-mono ">
+                  <ReactTextTransition >
+                    {paragraphs[paragraphIndex]}
                   </ReactTextTransition>
-              </section>
+                </section>
               </a>
             </section>
           </div>
