@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import './App.css';
 import Startpg from './components/startpage';
@@ -7,18 +8,18 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import Members from './components/members';
 import Eventpg from './components/Eventpg';
 import Contactpg from './components/Contactpg';
-import Card from './components/Card';
+
 function App() {
   return (
-    <div className='  main-body w-screen h-screen bg-white '>
-      <Scrollbars>
-        <AnimCursor />
+    <div className='main-body w-screen h-screen bg-white'>
+      {/* <Scrollbars className='scrollbars-custom'> */}
         <NavBar />
+        <AnimCursor />
         <Startpg />
         <Eventpg />
         <Members />
         <Contactpg />
-      </Scrollbars>
+      {/* </Scrollbars> */}
     </div>
   );
 }

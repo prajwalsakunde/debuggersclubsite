@@ -12,12 +12,14 @@ function NavBar() {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50">
+    <div className=" fixed top-0 left-0 right-0 z-50">
       <nav className="bg-white px-10 pt-3 pb-5 flex flex-col items-center sm:flex-row justify-between">
         <div className="pt-2 flex items-center">
           <img src={logo} className="w-14 h-14 ml-2 mr-7" alt="logo" />
-          <Link to='event1' spy={true} smooth={true} offset={-70} duration={500}>
-            <img src={debuggers} className="mt-2" alt="name" />
+          <Link to='start1' spy={true} smooth={true} offset={-70} duration={500}>
+            <div className=" font-sans font-light sm:text-3xl">
+              Debuggers' Club
+            </div>
           </Link>
         </div>
 
@@ -37,7 +39,7 @@ function NavBar() {
         > 
           <Link
             to="event1"
-            spy={true} smooth={true} offset={-70} duration={500}
+            spy={true} smooth={true} offset={-90} duration={500}
             className="sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black mr-0 sm:ml-10  sm:mr-32"
           >
             Event
@@ -45,7 +47,7 @@ function NavBar() {
 
           <Link
             to="member1"
-            spy={true} smooth={true} offset={-70} duration={500}
+            spy={true} smooth={true} offset={-90} duration={500}
             className="sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-32"
           >
             Members
@@ -53,7 +55,7 @@ function NavBar() {
           
           <Link
             to="contact1"
-            spy={true} smooth={true} offset={-70} duration={500}
+            spy={true} smooth={true} offset={-90} duration={500}
             className="sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-8"
           >
             Contact us

@@ -57,8 +57,8 @@ const Startpg = () => {
   }, []);
 
   return (
-    <main className="my-10 relative overflow-hidden w-screen h-screen">
-      <div id="start1" className="start1 flex justify-center w-screen h-screen relative mt-5 items-center">
+    <main id="start1" className="start1 my-10 relative overflow-hidden w-screen h-screen">
+      <div  className=" flex justify-center w-screen h-screen relative mt-5 items-center">
         <div className=" absolute top-72 right-36 w-1/4 h-1/4 hidden xl:block">
           <img src={backgdimg} alt="BAVKROUND IMG" />
         </div>
