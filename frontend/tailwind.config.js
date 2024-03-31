@@ -15,7 +15,7 @@ module.exports = {
         '11xl': '11rem', // Additional custom text size if needed
         // Add more custom text sizes as needed
       },
-       
+      
     },
   },
   plugins: [],

@@ -10,8 +10,7 @@ import equinox from "../assets/events/equinox.jpg";
 import dsbda from "../assets/events/dsbda.jpg";
 import dsa from "../assets/events/dsa.jpg";
 import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+
 const eventsData = [
   {
     id: 1,
@@ -64,22 +63,25 @@ const eventsData = [
     name: "DSA MINI Project Competition",
   },
 ];
+
 const Eventpg = () => {
   const settings = {
     infinite: true,
-
     slidesToShow: 2,
-    speed: 500,
+    speed: 2000,
+    autoplay:true,
+    autoplayspeed:2000,
+    cssEase:"linear",
+    pauseOnHover:false,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
         },
       },
-
       {
         breakpoint: 850,
         settings: {
@@ -88,7 +90,6 @@ const Eventpg = () => {
           initialSlide: 1,
         },
       },
-
       {
         breakpoint: 480,
         settings: {
@@ -98,30 +99,27 @@ const Eventpg = () => {
       },
     ],
   };
+
   return (
-    <div
-      id="member1"
-      className="member1 flex justify-center relative w-full h-screen "
-    >
-      <div className="absolute  text-center ">
-        <h2 className="text-3xl font-bold">Events</h2>
-        <p className="mt-2 text-lg">Events of the Debuggers Club.</p>
+    <div className="flex flex-col justify-center items-center relative w-full h-full overflow-hidden">
+      <div className="relative justify-center items-center text-center">
+        <a>
+        <h2 className="text-9xl font-sans font-light text-indigo-900 ">Events</h2>
+        <p className="mt-2 text-2xl font-thin">Events of the Debuggers Club.</p>
+        </a>
       </div>
-      {/* <div className="w-4/5 h-3/4 m-10"> */}
-      <div className=" w-1/2 h-3/4 m-10 mt-20">
+      <div className="relative w-screen h-3/4 m-6 mt-20 overflow-hidden">
         <Slider {...settings}>
           {eventsData.map((d) => (
-            <div className="card w-60 h-80 md:w-20  md:h-128" key={d.id}>
+            <div className="card w-full h-80 md:w-20 overflow-hidden md:h-128" key={d.id}>
               <img className="w-full rounded-lg" src={d.img} alt={d.name} />
-              <div className="card__content">
-                <p className="card__title">{d.name}</p>
-                <p className="card__description">{d.description}</p>
+              <div className="card__content bg-opacity-5 bg-slate-400 absolute bottom-0 left-0 w-full p-4 transform translate-y-full transition duration-300 ease-in-out hover:translate-y-0">
+                <p className="card__title text-lg font-semibold text-white">{d.name}</p>
               </div>
             </div>
           ))}
         </Slider>
       </div>
-      {/* </div> */}
     </div>
   );
 };

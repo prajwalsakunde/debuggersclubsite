@@ -7,10 +7,9 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import Members from './components/members';
 import Eventpg from './components/Eventpg';
 import Contactpg from './components/Contactpg';
-
 function App() {
   return (
-    <div className='main-body w-screen h-screen bg-white '>
+    <div className='  main-body w-screen h-screen bg-white '>
       <Scrollbars>
         <AnimCursor />
         <NavBar />
