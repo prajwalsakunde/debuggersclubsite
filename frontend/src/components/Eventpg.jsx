@@ -16,8 +16,7 @@ const eventsData = [
     id: 1,
     img: experttalkgate,
     name: "Expert Talk",
-    info: `Expert Talk on “Career
-    after GATE Examination”\nDate: 1st Aug 2022\nSpeaker: Mr. Suraj Singh Thakur(AIR GATE 4)\nTopics Covered: 
+    info: `Expert Talk on “Career after GATE Examination”\nDate: 1st Aug 2022\nSpeaker: Mr. Suraj Singh Thakur(AIR GATE 4)\nTopics Covered: 
     ● Career pathways after B.E. 
     ● Current industry situation for IT and Computer students.
     ● Importance of Geometric Progression in personal development.

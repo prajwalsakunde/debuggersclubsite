@@ -85,7 +85,7 @@
   }
   
   .card:hover .image {
-    transform: scale(2) translate(-62%,-22%);
+    transform: scale(2) translate(0%,-22%);
   }
   
   .button:hover {

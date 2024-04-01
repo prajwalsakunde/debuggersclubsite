@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./images.css";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import AnimatedCursor from "react-animated-cursor";
 import {
   Captions,
   Fullscreen,
@@ -34,10 +35,13 @@ function Gallery({ data, onClick }) {
   ];
 
   return (
+   <>
+   
     <div
       id="gallery"
       className="App pt-5 gallery1 flex justify-center relative w-full h-screen "
     >
+      
       <div className="absolute  text-center  ">
         <h2 className="sm:text-4xl md:text-6xl lg:text-9xl font-sans font-light text-indigo-900 ">
           Debuggers Gallery
@@ -71,6 +75,7 @@ function Gallery({ data, onClick }) {
         </div>
       </>
     </div>
+   </> 
   );
 }
 

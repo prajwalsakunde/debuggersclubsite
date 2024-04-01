@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import logo from "../assets/logo.png";
 import debuggers from "../assets/debuggers.png";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { slides } from "./data";
 
 import Lightbox from "yet-another-react-lightbox";
@@ -14,15 +14,25 @@ import {
   Zoom,
 } from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-
 import "yet-another-react-lightbox/plugins/captions.css";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [open, setOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(null);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleLinkClick = (linkName) => {
+    if (linkName === "start1") {
+      // Reset active link when "Debuggers' Club" link is clicked
+      setActiveLink(null);
+    } else {
+      setActiveLink(linkName);
+    }
+    setIsMenuOpen(false);
   };
 
   return (
@@ -30,17 +40,18 @@ function NavBar() {
       <nav className="bg-white px-10 pt-3 pb-5 flex flex-col items-center sm:flex-row justify-between">
         <div className="pt-2 flex items-center">
           <img src={logo} className="w-14 h-14 ml-2 mr-7" alt="logo" />
-          <Link
+          <ScrollLink
             to="start1"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={() => handleLinkClick("start1")}
           >
             <div className=" font-sans font-light sm:text-3xl">
               Debuggers' Club
             </div>
-          </Link>
+          </ScrollLink>
         </div>
 
         <div className="sm:hidden">
@@ -57,29 +68,35 @@ function NavBar() {
             isMenuOpen ? "flex" : "hidden"
           } flex-col sm:flex-row items-center space-y-1 sm:space-y-0  sm:flex `}
         >
-          <Link
+          <ScrollLink
             to="event1"
             spy={true}
             smooth={true}
             offset={-90}
             duration={500}
-            className="sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black mr-0 sm:ml-10  sm:mr-32"
+            onClick={() => handleLinkClick("event1")}
+            className={`sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black mr-0 sm:ml-10  sm:mr-32 ${
+              activeLink === "event1" ? "underline" : ""
+            }`}
           >
             Event
-          </Link>
+          </ScrollLink>
 
-          <Link
+          <ScrollLink
             to="member1"
             spy={true}
             smooth={true}
             offset={-90}
             duration={500}
-            className="sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-32"
+            onClick={() => handleLinkClick("member1")}
+            className={`sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-32 ${
+              activeLink === "member1" ? "underline" : ""
+            }`}
           >
             Members
-          </Link>
+          </ScrollLink>
 
-          <Link
+          <ScrollLink
             to="gallery"
             spy={true}
             smooth={true}
@@ -113,18 +130,21 @@ function NavBar() {
                 slides={slides}
               />
             </>
-          </Link>
+          </ScrollLink>
 
-          <Link
+          <ScrollLink
             to="contact1"
             spy={true}
             smooth={true}
             offset={-90}
             duration={500}
-            className="sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-8"
+            onClick={() => handleLinkClick("contact1")}
+            className={`sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-8 ${
+              activeLink === "contact1" ? "underline" : ""
+            }`}
           >
             Contact us
-          </Link>
+          </ScrollLink>
         </div>
       </nav>
       <div className="p-1 sm:p-1 bg-gradient-to-r from-indigo-200 from-10%  via-sky-200 via-40% to-fuchsia-100 to-90%"></div>
