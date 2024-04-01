@@ -65,6 +65,7 @@ function Gallery({ data, onClick }) {
               <p className="mt-2 sm:text-xl xl:text-2xl font-thin">
                 {slide.title}
               </p>
+              <p className="mt-2 sm:text-xl xl:text-2xl font-thin">tru h kya</p>
             </div>
           ))}
         </div>
