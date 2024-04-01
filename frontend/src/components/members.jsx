@@ -214,7 +214,7 @@ const Members = () => {
   return (
     <div
       id="member1"
-      className="flex flex-col justify-center items-center relative w-full h-screen overflow-hidden"
+      className="member1 flex flex-col justify-center items-center relative w-full h-screen overflow-hidden"
     >
       <div className="relative justify-center items-center text-center">
         <a>

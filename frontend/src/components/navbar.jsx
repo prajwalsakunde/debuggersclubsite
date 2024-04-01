@@ -26,18 +26,20 @@ function NavBar() {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50">
+    <div className=" fixed top-0 left-0 right-0 z-50">
       <nav className="bg-white px-10 pt-3 pb-5 flex flex-col items-center sm:flex-row justify-between">
         <div className="pt-2 flex items-center">
           <img src={logo} className="w-14 h-14 ml-2 mr-7" alt="logo" />
           <Link
-            to="event1"
+            to="start1"
             spy={true}
             smooth={true}
-            offset={-90}
+            offset={-70}
             duration={500}
           >
-            <img src={debuggers} className="mt-2" alt="name" />
+            <div className=" font-sans font-light sm:text-3xl">
+              Debuggers' Club
+            </div>
           </Link>
         </div>
 
@@ -125,7 +127,7 @@ function NavBar() {
           </Link>
         </div>
       </nav>
-      <div className="p-1 sm:p-2 bg-gradient-to-r from-indigo-200 from-10%  via-sky-200 via-40% to-fuchsia-100 to-90%"></div>
+      <div className="p-1 sm:p-1 bg-gradient-to-r from-indigo-200 from-10%  via-sky-200 via-40% to-fuchsia-100 to-90%"></div>
     </div>
   );
 }
