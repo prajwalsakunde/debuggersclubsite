@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Card from "./Card"; // Assuming Card component is in the same directory
-import prajwal from '../Imgs/prajwal.png';
+import prajwal from "../Imgs/prajwal.png";
 const membersData = [
   {
     id: 1,
@@ -155,7 +155,6 @@ const membersData = [
     name: "Rashmi Patil",
     info: "Core Member",
   },
-
 ];
 
 const Members = () => {
@@ -213,7 +212,10 @@ const Members = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center relative w-full h-screen overflow-hidden">
+    <div
+      id="member1"
+      className="flex flex-col justify-center items-center relative w-full h-screen overflow-hidden"
+    >
       <div className="relative justify-center items-center text-center">
         <a>
           <h2 className="sm:text-4xl md:text-6xl lg:text-9xl font-sans font-light text-indigo-900 ">

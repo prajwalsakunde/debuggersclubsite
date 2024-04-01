@@ -1,11 +1,25 @@
 import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import logo from "../assets/logo.png";
-import debuggers from '../assets/debuggers.png';
-import { Link } from 'react-scroll';
+import debuggers from "../assets/debuggers.png";
+import { Link } from "react-scroll";
+import { slides } from "./data";
+
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import {
+  Captions,
+  Fullscreen,
+  Thumbnails,
+  Zoom,
+} from "yet-another-react-lightbox/plugins";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+
+import "yet-another-react-lightbox/plugins/captions.css";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -16,7 +30,13 @@ function NavBar() {
       <nav className="bg-white px-10 pt-3 pb-5 flex flex-col items-center sm:flex-row justify-between">
         <div className="pt-2 flex items-center">
           <img src={logo} className="w-14 h-14 ml-2 mr-7" alt="logo" />
-          <Link to='event1' spy={true} smooth={true} offset={-70} duration={500}>
+          <Link
+            to="event1"
+            spy={true}
+            smooth={true}
+            offset={-90}
+            duration={500}
+          >
             <img src={debuggers} className="mt-2" alt="name" />
           </Link>
         </div>
@@ -34,10 +54,13 @@ function NavBar() {
           className={`${
             isMenuOpen ? "flex" : "hidden"
           } flex-col sm:flex-row items-center space-y-1 sm:space-y-0  sm:flex `}
-        > 
+        >
           <Link
             to="event1"
-            spy={true} smooth={true} offset={-70} duration={500}
+            spy={true}
+            smooth={true}
+            offset={-90}
+            duration={500}
             className="sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black mr-0 sm:ml-10  sm:mr-32"
           >
             Event
@@ -45,20 +68,62 @@ function NavBar() {
 
           <Link
             to="member1"
-            spy={true} smooth={true} offset={-70} duration={500}
+            spy={true}
+            smooth={true}
+            offset={-90}
+            duration={500}
             className="sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-32"
           >
             Members
           </Link>
-          
+
+          <Link
+            to="gallery"
+            spy={true}
+            smooth={true}
+            offset={-90}
+            duration={500}
+            className="sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-32"
+          >
+            <>
+              <button
+                type="button"
+                onClick={() => setOpen(true)}
+                style={{
+                  border: "none",
+                  background: "none",
+                  padding: 0,
+                  font: "inherit",
+                  cursor: "pointer",
+                  outline: "none",
+                }}
+              >
+                Gallery
+              </button>
+              <Lightbox
+                open={open}
+                close={() => setOpen(false)}
+                plugins={[Captions, Fullscreen, Zoom, Thumbnails]}
+                captions={{
+                  showToggle: true,
+                  descriptionTextAlign: "center",
+                }}
+                slides={slides}
+              />
+            </>
+          </Link>
+
           <Link
             to="contact1"
-            spy={true} smooth={true} offset={-70} duration={500}
+            spy={true}
+            smooth={true}
+            offset={-90}
+            duration={500}
             className="sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-8"
           >
             Contact us
           </Link>
-        </div>  
+        </div>
       </nav>
       <div className="p-1 sm:p-2 bg-gradient-to-r from-indigo-200 from-10%  via-sky-200 via-40% to-fuchsia-100 to-90%"></div>
     </div>

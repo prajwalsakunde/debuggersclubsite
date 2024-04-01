@@ -1,0 +1,49 @@
+.images-containerss {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2.7rem;
+  margin-top: 200px;
+}
+
+.imagess {
+  width: 100%;
+  height: 20rem;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.imagess:hover {
+  transform: scale(1.05); /* Zoom in effect */
+}
+.imagess img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* Responsive styles */
+@media screen and (max-width: 800px) {
+  .images-containerss {
+    grid-template-columns: 1fr; /* Change to single column layout */
+    margin-top: 50px;
+  }
+
+  .imagess {
+    height: auto; /* Auto height to fit content */
+    margin-bottom: 1rem; /* Add space between images */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .images-containerss {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 0.5rem;
+  }
+
+  .imagess {
+    height: 10rem;
+  }
+}

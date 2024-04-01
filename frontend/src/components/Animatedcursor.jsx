@@ -11,70 +11,42 @@ function AnimCursor() {
     outerAlpha: 2,
     hasBlendMode: true,
     outerStyle: {
-      mixBlendMode: 'exclusion'
+      mixBlendMode: "exclusion",
     },
     innerStyle: {
-      backgroundColor: 'var(--cursor-color)',
-      mixBlendMode: 'exclusion'
-    }
+      backgroundColor: "var(--cursor-color)",
+      mixBlendMode: "exclusion",
+    },
   });
 
   useEffect(() => {
     function handleResize() {
       const screenWidth = window.innerWidth;
+      let newProps = {};
       if (screenWidth < 640) {
-        setCursorProps({
-          color: "255,255,255",
+        newProps = {
           innerSize: 5,
           outerSize: 12,
           innerScale: 2,
           outerScale: 3,
-          outerAlpha: 2,
-          hasBlendMode: true,
-          outerStyle: {
-            mixBlendMode: 'exclusion'
-          },
-          innerStyle: {
-            backgroundColor: 'var(--cursor-color)',
-            mixBlendMode: 'exclusion'
-          }
-        });
+        };
       } else if (screenWidth >= 640 && screenWidth < 1024) {
-        setCursorProps({
-          color: "255,255,255",
+        newProps = {
           innerSize: 7,
           outerSize: 25,
           innerScale: 3,
           outerScale: 4,
-          outerAlpha: 3,
-          hasBlendMode: true,
-          outerStyle: {
-            mixBlendMode: 'exclusion'
-          },
-          innerStyle: {
-            backgroundColor: 'var(--cursor-color)',
-            mixBlendMode: 'exclusion'
-          }
-        });
+        };
       } else {
         // Fallback to medium screen props for larger screens
-        setCursorProps({
-          color: "255,255,255",
+        newProps = {
           innerSize: 7,
           outerSize: 25,
           innerScale: 3,
           outerScale: 4,
-          outerAlpha: 3,
-          hasBlendMode: true,
-          outerStyle: {
-            mixBlendMode: 'exclusion'
-          },
-          innerStyle: {
-            backgroundColor: 'var(--cursor-color)',
-            mixBlendMode: 'exclusion'
-          }
-        });
+        };
       }
+      setCursorProps((prevProps) => ({ ...prevProps, ...newProps }));
     }
 
     // Call handleResize initially
