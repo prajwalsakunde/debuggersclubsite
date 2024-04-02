@@ -10,6 +10,7 @@ import Eventpg from "./components/Eventpg";
 import Contactpg from "./components/Contactpg";
 import LoadingBar from 'react-top-loading-bar'
 import { useEffect,useState } from "react";
+import Footer from "./components/Footer";
 function App() {
   const [progress, setProgress] = useState(0)
   useEffect(() => {
@@ -36,6 +37,7 @@ function App() {
       <Eventpg />
       <Members />
       <Contactpg />
+      <Footer/>
     </div>
   );
 }
