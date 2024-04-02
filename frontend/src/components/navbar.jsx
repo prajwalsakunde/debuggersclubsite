@@ -37,7 +37,7 @@ function NavBar() {
 
   return (
     <div className=" fixed top-0 left-0 right-0 z-50">
-      <nav className="bg-white px-10 pt-3 pb-5 flex flex-col items-center sm:flex-row justify-between">
+      <nav className="bg-white md:px-5 lg:px-10 pt-3 pb-5 flex flex-col items-center md:flex-row justify-between">
         <div className="pt-2 flex items-center">
           <img src={logo} className="w-14 h-14 ml-2 mr-7" alt="logo" />
           <ScrollLink
@@ -48,13 +48,13 @@ function NavBar() {
             duration={500}
             onClick={() => handleLinkClick("start1")}
           >
-            <div className=" font-sans font-light sm:text-3xl">
+            <div className=" font-sans font-light sm:text-lg md:text-xl lg:text-3xl">
               Debuggers' Club
             </div>
           </ScrollLink>
         </div>
 
-        <div className="sm:hidden">
+        <div className="md:hidden">
           <button
             onClick={handleMenuToggle}
             className="block text-gray-600 focus:outline-none"
@@ -66,7 +66,7 @@ function NavBar() {
         <div
           className={`${
             isMenuOpen ? "flex" : "hidden"
-          } flex-col sm:flex-row items-center space-y-1 sm:space-y-0  sm:flex `}
+          } flex-col md:flex-row justify-center items-center space-y-1 sm:space-y-0  md:flex `}
         >
           <ScrollLink
             to="event1"
@@ -75,8 +75,8 @@ function NavBar() {
             offset={-90}
             duration={500}
             onClick={() => handleLinkClick("event1")}
-            className={`sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black mr-0 sm:ml-10  sm:mr-32 ${
-              activeLink === "event1" ? "underline" : ""
+            className={`sm:text-sm md:text-base xl:text-lg font-extralight hover:font-semibold hover:text-black mr-0 lg:mx-14 md:mx-10  ${
+              activeLink === "event1" ? "underline font-semibold" : ""
             }`}
           >
             Event
@@ -89,8 +89,8 @@ function NavBar() {
             offset={-90}
             duration={500}
             onClick={() => handleLinkClick("member1")}
-            className={`sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-32 ${
-              activeLink === "member1" ? "underline" : ""
+            className={`sm:text-sm md:text-base xl:text-lg font-extralight hover:font-semibold hover:text-black lg:mx-14 md:mx-10 ${
+              activeLink === "member1" ? "underline font-semibold" : ""
             }`}
           >
             Members
@@ -102,8 +102,11 @@ function NavBar() {
             smooth={true}
             offset={-90}
             duration={500}
-            className="sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-32"
-          >
+            onClick={() => handleLinkClick("gallery")}
+            className={`sm:text-sm md:text-base xl:text-lg font-extralight hover:font-semibold hover:text-black lg:mx-14 md:mx-10 ${
+              activeLink === "gallery" ? "underline font-semibold" : ""
+            }`}
+            >
             <>
               <button
                 type="button"
@@ -130,6 +133,7 @@ function NavBar() {
                 slides={slides}
               />
             </>
+            {/* Gallery */}
           </ScrollLink>
 
           <ScrollLink
@@ -139,8 +143,8 @@ function NavBar() {
             offset={-90}
             duration={500}
             onClick={() => handleLinkClick("contact1")}
-            className={`sm:text-sm md:text-lg font-extralight hover:font-semibold hover:text-black sm:mr-8 ${
-              activeLink === "contact1" ? "underline" : ""
+            className={`sm:text-sm md:text-base xl:text-lg font-extralight hover:font-semibold lg:w-full lg:h-full  md:w-20 md:h-full hover:text-black lg:mx-14 md:mx-10 ${
+              activeLink === "contact1" ? "underline font-semibold" : ""
             }`}
           >
             Contact us
