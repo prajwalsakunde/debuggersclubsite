@@ -1,6 +1,8 @@
 import React from 'react';
 import './Card.css'; // assuming your CSS file is named Card.css
 import insta from "../assets/instagram.png"
+import gmail from "../assets/gmail.png"
+import linkedin from "../assets/linkedin.png"
 
 const Card = ({ name, img, info }) => {
   return (
@@ -12,19 +14,56 @@ const Card = ({ name, img, info }) => {
         <span className='pb-2'>{name}</span>
         <p>{info}</p>
       </div>
-      <a href="#" target='_blank'>
-      <img src={insta} alt='insta' 
+      <div className="relative flex gap-20 flex-row ">
+      
+      <section className="flex flex-row justify-center items-center">
+          <a
+            href="https://www.instagram.com/debuggersclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+            target="_self"
+            className="group flex justify-center text-white font-semibold hover:-translate-y-3  transition-all  d1ration-500"
+          >
+            <img src={insta} alt='insta' 
               viewBox="0 0 24 24"
               
               fill="currentColor"
               stroke="currentColor"
               className="w-7 h-7" />
-            <span
-              className="absolute opacity-0 group-hover:opacity-100 group-hover: text-slate-200  group-hover:text-sm group-hover:-translate-y-7 duration-700"
-            >
-              Instagram
-            </span>
-            </a> 
+          
+          </a>
+        </section>
+        
+      <section className="flex flex-row justify-center items-center">
+          <a
+            href="https://www.instagram.com/debuggersclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+            target="_self"
+            className="group flex justify-center text-white font-semibold hover:-translate-y-3  transition-all d1ration-500"
+          >
+            <img src={gmail} alt='insta' 
+              viewBox="0 0 24 24"
+              
+              fill="currentColor"
+              stroke="currentColor"
+              className="w-7 h-7" />
+          
+          </a>
+        </section>
+        
+      <section className="flex flex-row justify-center items-center">
+          <a
+            href="https://www.instagram.com/debuggersclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+            target="_self"
+            className="group flex justify-center text-white font-semibold hover:-translate-y-3  transition-all d1ration-500"
+          >
+            <img src={linkedin} alt='insta' 
+              viewBox="0 0 24 24"
+              
+              fill="currentColor"
+              stroke="currentColor"
+              className="w-7 h-7" />
+          
+          </a>
+        </section>
+      </div>
     </div>
   );
 }

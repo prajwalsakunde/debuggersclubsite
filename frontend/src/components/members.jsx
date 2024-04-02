@@ -15,12 +15,12 @@ import atharvaS from '../assets/MembersPhotos/AtharvaSangle.jpg';
 import vishakha from '../assets/MembersPhotos/VishakhaSainani.jpg';
 import atharvaD from '../assets/MembersPhotos/AtharvaDeore.jpg';
 import pranav from '../assets/MembersPhotos/PranavSalunkhe.jpg';
-import shurti from '../assets/MembersPhotos/ShurtiWare.jpg';
+import shurti from '../assets/MembersPhotos/ShrutiWare.jpg';
 import yashraj from '../assets/MembersPhotos/yashrajdesale.jpg';
-// import sharvari from '../assets/MembersPhotos/SharvariBorse.jpg';
+import sharvari from '../assets/MembersPhotos/SharvariBorse.jpg';
 import srushti from '../assets/MembersPhotos/SrushtiNikham.jpg';
 import sanika from '../assets/MembersPhotos/SanikaMahajan.jpg';
-// import roshani from '../assets/MembersPhotos/RoshaniAmrutkar.jpg';
+import roshani from '../assets/MembersPhotos/RoshaniAmrutkar.jpg';
 import deshna from '../assets/MembersPhotos/DeshnaShah.jpg';
 import raksha from '../assets/MembersPhotos/RakshaAage.jpg';
 import komal from '../assets/MembersPhotos/KomalAttarde.jpg';
@@ -116,7 +116,7 @@ const membersData = [
   },
   {
     id: 15,
-    img: prajwal,
+    img: sharvari,
     name: "Sharvari Borse",
     info: "Workshop/Expert Talk",
   },
@@ -134,7 +134,7 @@ const membersData = [
   },
   {
     id: 18,
-    img: prajwal,
+    img: roshani,
     name: "Roshani Amrutkar",
     info: "Creatives",
   },
