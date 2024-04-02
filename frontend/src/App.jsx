@@ -22,7 +22,7 @@ function App() {
 
   return (
     
-    <div className="main-body w-screen h-screen bg-white">
+    <div className="main-body  w-screen h-screen bg-white">
       
       <AnimCursor />
       <NavBar />
@@ -31,6 +31,7 @@ function App() {
               progress={progress}
               onLoaderFinished={() => setProgress(0)}
       />
+      
       <Startpg />
       <Eventpg />
       <Members />
