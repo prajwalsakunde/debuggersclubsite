@@ -7,7 +7,7 @@
     justify-content: center;
     text-align: center;
     gap: 10px;
-    background-color: #fcfce0ed;
+    background-color: #ebe6e6;
     border-radius: 15px;
     position: relative;
     overflow: hidden;
@@ -21,8 +21,8 @@
     top: 0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    border-bottom: 3px solid #fefefe;
-    background: linear-gradient(40deg, rgb(210, 177, 228) 0%, rgb(86, 130, 224) 60%, rgb(134, 131, 220) 100%);
+    border-bottom: 3px solid #F8DE22;
+    background: linear-gradient(40deg, rgb(34, 54, 164) 0%, rgb(29, 39, 60) 60%, rgb(122, 121, 138) 100%);
     transition: all 0.5s ease;
   }
   
@@ -31,12 +31,12 @@
   }
   
   .image {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     
-    background-color: #b0c0d1;
+    background-color: #f3f2ee;
     border-radius: 50%;
-    border: 4px solid #fefefe;
+    border: 4px solid #F8DE22;
     margin-top: 30px;
     transition: all 0.5s ease;
   }
@@ -52,28 +52,20 @@
   .card-info span {
     font-weight: 600;
     font-size: 24px;
-    color: #161A42;
+    color: #040202;
     margin-top: 15px;
     line-height: 5px;
   }
   
   .card-info p {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(16, 12, 12, 0.5);
   }
   
-  .button {
-    text-decoration: none;
-    background-color: #081829;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 5px;
-    border: 1px solid white;
-    transition: all 0.5s ease;
-  }
-  
+
   .card:hover::before {
     width: 350px;
     height: 300px;
+
     border-bottom: none;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -81,14 +73,16 @@
   }
   
   .card:hover .card-info {
-    transform: translate(0%,-25%);
+    transform: translate(0%,-7%);
+  }
+
+  .card:hover .card-info span{
+    color: #f3eded;
   }
   
+  .card:hover .card-info p{
+    color: rgba(245, 249, 249, 0.776);
+  }
   .card:hover .image {
-    transform: scale(2) translate(0%,-22%);
-  }
-  
-  .button:hover {
-    background-color: #FF6844;
-    transform: scale(1.1);
+    transform: scale(1.6) translate(0%,-15%);
   }

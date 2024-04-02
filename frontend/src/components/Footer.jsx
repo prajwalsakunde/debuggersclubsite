@@ -8,76 +8,76 @@ const Footer = () => {
   return (
     <footer className="relative flex flex-col items-center bg-black text-white">
       <div className="relative flex gap-20 flex-row pt-10">
-        <section class="flex flex-row justify-center items-center">
+        <section className="flex flex-row justify-center items-center">
           <a
             href="https://www.instagram.com/debuggersclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
             target="_self"
-            class="group flex justify-center text-white font-semibold hover:translate-y-3  transition-all d1ration-500"
+            className="group flex justify-center text-white font-semibold hover:translate-y-3  transition-all d1ration-500"
           >
             <img src={insta} alt='insta' 
               viewBox="0 0 24 24"
               
               fill="currentColor"
               stroke="currentColor"
-              class="w-7 h-7" />
+              className="w-7 h-7" />
             <span
-              class="absolute opacity-0 group-hover:opacity-100 group-hover: text-slate-200  group-hover:text-sm group-hover:-translate-y-7 duration-700"
+              className="absolute opacity-0 group-hover:opacity-100 group-hover: text-slate-200  group-hover:text-sm group-hover:-translate-y-7 duration-700"
             >
               Instagram
             </span>
           </a>
         </section>
-        <section class="flex flex-row justify-center items-center">
+        <section className="flex flex-row justify-center items-center">
           <a
             href="mailto: debuggersclubkkwieer@gmail.com"
             target="_blank"
-            class="group flex justify-center text-white font-semibold hover:translate-y-3  transition-all d1ration-500"
+            className="group flex justify-center text-white font-semibold hover:translate-y-3  transition-all d1ration-500"
           >
             <img src={gmail} alt='insta' 
               viewBox="0 0 24 24"
               
               fill="currentColor"
               stroke="currentColor"
-              class="w-7 h-7" />
+              className="w-7 h-7" />
             <span
-              class="absolute opacity-0 group-hover:opacity-100 group-hover: text-slate-200  group-hover:text-sm group-hover:-translate-y-7 duration-700"
+              className="absolute opacity-0 group-hover:opacity-100 group-hover: text-slate-200  group-hover:text-sm group-hover:-translate-y-7 duration-700"
             >
               Mail
             </span>
           </a>
         </section>
-        <section class="flex flex-row justify-center items-center">
+        <section className="flex flex-row justify-center items-center">
           <a
             href="https://www.linkedin.com/company/debuggers-club-kkwieer/mycompany/"
             target="_self"
-            class="group flex justify-center text-white font-semibold hover:translate-y-3  transition-all d1ration-500"
+            className="group flex justify-center text-white font-semibold hover:translate-y-3  transition-all d1ration-500"
           >
             <img src={linkedin} alt='insta' 
               viewBox="0 0 24 24"
               
               fill="currentColor"
               stroke="currentColor"
-              class="w-7 h-7" />
+              className="w-7 h-7" />
             <span
-              class="absolute opacity-0 group-hover:opacity-100 group-hover: text-slate-200  group-hover:text-sm group-hover:-translate-y-7 duration-700"
+              className="absolute opacity-0 group-hover:opacity-100 group-hover: text-slate-200  group-hover:text-sm group-hover:-translate-y-7 duration-700"
             >
               LinkedIn
             </span>
           </a>
         </section>
-        <section class="flex flex-row justify-center items-center">
+        <section className="flex flex-row justify-center items-center">
           <a
             href="/"
-            class="group flex justify-center text-white font-semibold hover:translate-y-3  transition-all d1ration-500"
+            className="group flex justify-center text-white font-semibold hover:translate-y-3  transition-all d1ration-500"
           >
             <img src={twitter} alt='insta' 
               viewBox="0 0 24 24"
               
               fill="currentColor"
               stroke="currentColor"
-              class="w-7 h-7" />
+              className="w-7 h-7" />
             <span
-              class="absolute opacity-0 group-hover:opacity-100 group-hover: text-slate-200  group-hover:text-sm group-hover:-translate-y-7 duration-700"
+              className="absolute opacity-0 group-hover:opacity-100 group-hover: text-slate-200  group-hover:text-sm group-hover:-translate-y-7 duration-700"
             >
               Twitter
             </span>

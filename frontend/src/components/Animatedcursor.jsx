@@ -5,8 +5,8 @@ export default function App() {
   return (
     <div className="App">
       <AnimatedCursor
-        innerSize={8}
-        outerSize={8}
+        innerSize={10}
+        outerSize={10}
         color="56, 122, 223"
         outerAlpha={0.2}
         innerScale={0.7}
