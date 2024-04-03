@@ -1,10 +1,10 @@
 import React from 'react';
 import './Card.css'; // assuming your CSS file is named Card.css
-import insta from "../assets/instagram.png"
-import gmail from "../assets/gmail.png"
-import linkedin from "../assets/linkedin.png"
+import instagrmimg from "../assets/instagram.png"
+import gmailimg from "../assets/gmail.png"
+import linkedinimg from "../assets/linkedin.png"
 
-const Card = ({ name, img, info }) => {
+const Card = ({ name, img, info ,insta , linkedin , mail }) => {
   return (
     <div className="card">
       <div className="image">
@@ -18,11 +18,11 @@ const Card = ({ name, img, info }) => {
       
       <section className="flex flex-row justify-center items-center">
           <a
-            href="https://www.instagram.com/debuggersclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+            href={insta}
             target="_self"
             className="group flex justify-center text-white font-semibold hover:-translate-y-3  transition-all  d1ration-500"
           >
-            <img src={insta} alt='insta' 
+            <img src={instagrmimg} alt='insta' 
               viewBox="0 0 24 24"
               
               fill="currentColor"
@@ -34,11 +34,11 @@ const Card = ({ name, img, info }) => {
         
       <section className="flex flex-row justify-center items-center">
           <a
-            href="https://www.instagram.com/debuggersclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+            href={mail}
             target="_self"
             className="group flex justify-center text-white font-semibold hover:-translate-y-3  transition-all d1ration-500"
           >
-            <img src={gmail} alt='insta' 
+            <img src={gmailimg} alt='insta' 
               viewBox="0 0 24 24"
               
               fill="currentColor"
@@ -50,11 +50,10 @@ const Card = ({ name, img, info }) => {
         
       <section className="flex flex-row justify-center items-center">
           <a
-            href="https://www.instagram.com/debuggersclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
-            target="_self"
+            href={linkedin}            target="_self"
             className="group flex justify-center text-white font-semibold hover:-translate-y-3  transition-all d1ration-500"
           >
-            <img src={linkedin} alt='insta' 
+            <img src={linkedinimg} alt='insta' 
               viewBox="0 0 24 24"
               
               fill="currentColor"

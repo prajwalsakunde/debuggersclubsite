@@ -35,150 +35,249 @@ const membersData = [
     img: prajwal,
     name: "Prajwal Sakunde",
     info: "Website/Erp Coordinator",
+    insta:"https://www.instagram.com/prajwal.main?utm_source=qr&igsh=MzNlNGNkZWQ4Mg==",
+    linkedin:"https://www.linkedin.com/in/prajwals976757?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    mail:"prajwalsakunde1234@gmail.com",
   },
   {
     id: 2,
     img: vedant,
     name: "Vedant Patil",
     info: "Placement Coordinator",
+    insta:"https://www.instagram.com/vedd_?igsh=NHBxNWxrcXk5YXY2",
+    linkedin:"https://www.linkedin.com/in/vedant-patil-b42b1925b/",
+    mail:"vedantp2509@gmail.com",
+  
   },
   {
     id: 3,
     img: om,
     name: "Om Patil",
     info: "Creatives",
+    insta:"https://www.instagram.com/ompatil.7/",
+    linkedin:"https://www.linkedin.com/in/om-patil-560a82249/",
+    mail:"ompatil4749@gmail.com",
+  
   },
   {
     id: 4,
     img: rugved,
     name: "Rugved Kulkarni",
     info: "Secretary",
+    insta:"https://www.instagram.com/rugvedmkulkarni?igsh=MXBicnd5dWVxa3RocA==",
+    linkedin:"https://www.linkedin.com/in/rugved-kulkarni-4aa728249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    mail:"rugvedmkulkarni@gmail.com",
+  
   },
   {
     id: 5,
     img: pruthvij,
     name: "Pruthvij Desai",
     info: "Discipline Committee",
+    insta:"https://www.instagram.com/pruthvij_008?igsh=ZGQyMTNlM2Z5MXlo",
+    linkedin:"https://www.linkedin.com/in/pruthvij-desai/",
+    mail:"desaipruthvij1@gmail.com",
+  
   },
   {
     id: 6,
     img: aarushi,
     name: "Aarushi Taori",
     info: "President",
+    insta:"https://www.instagram.com/_aaru_3009?igsh=YmV3ZmlicHo5aHlm&utm_source=qr",
+    linkedin:"https://www.linkedin.com/in/aarushi-taori-b5b279229/",
+    mail:"aarushit2003@gmail.com ",
+  
   },
   {
     id: 7,
     img: abhijit,
     name: "Abhijit Wagh",
     info: "Vice President",
+    insta:"https://www.instagram.com/abhijit._2?igsh=YmkxN2g1Y2RwbTM2",
+    linkedin:"https://www.linkedin.com/in/abhijit-wagh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    mail:"abhi.wagh2712@gmail.com",
+  
   },
   {
     id: 8,
     img: ashiya,
     name: "Ashiya Ajare",
     info: "Secretary",
+    insta:"https://www.instagram.com/ashiyaajare",
+    linkedin:"https://www.linkedin.com/in/ashiya-ajare-b85266233",
+    mail:"ashiya.ajare@gmail.com",
+  
   },
   {
     id: 9,
     img: atharvaS,
     name: "Atharva Sangle",
     info: "Treasurer",
+    insta:"https://www.instagram.com/atharva_sangle1063?igsh=MWVnajFuOWp5ajdqOA==",
+    linkedin:"https://www.linkedin.com/in/atharva-sangle-a7789a239/",
+    mail:"atharvasangle004@gmail.com",
+  
   },
   {
     id: 10,
     img: vishakha,
     name: "Vishakha Sainani",
     info: "Treasurer",
+    insta:"https://www.instagram.com/kyoko_chan26?igsh=Y2l6bzNuaTg3dGcy",
+    linkedin:"https://www.linkedin.com/in/vishakha-sainani-85266b255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    mail:"vishakhasainani26@gmail.com",
+  
   },
   {
     id: 11,
     img: atharvaD,
     name: "Atharva Deore",
     info: "Alumni Coordinator",
+    insta:"https://www.instagram.com/a_t_h_a_r_v_0402?igsh=c2tyczFrbG92NWF4",
+    linkedin:"https://www.linkedin.com/in/atharv-deore-2a9b62248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    mail:"atharvadeore9934@gmail.com",
+  
   },
   {
     id: 12,
     img: pranav,
     name: "Pranav Salunkhe",
     info: "Alumni Coordinator",
+    insta:"https://www.instagram.com/pranavsalunkhe2003/",
+    linkedin:"https://www.linkedin.com/in/pranav-salunkhe-89926822a/",
+    mail:"pranavsalunkhe327@gmail.com",
+  
   },
   {
     id: 13,
     img: shurti,
     name: "Shurti Ware",
     info: "Placement Coordinator",
+    insta:"https://www.instagram.com/shrutiware_30?igsh=ZGt1dHZ5dnZsNjln",
+    linkedin:"https://www.linkedin.com/in/shruti-ware-598943229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    mail:"shrutiware1@gmail.com",
+  
   },
   {
     id: 14,
     img: yashraj,
     name: "Yashraj Desale",
     info: "Website/Erp Coordinator",
+    insta:"https://www.linkedin.com/in/bkyashrajdesale/",
+    linkedin:"https://www.instagram.com/yashrajdesale02?igsh=MWlnenE2a2JuemFmeg==",
+    mail:"yashrajdesale1@gmail.com",
+  
   },
   {
     id: 15,
     img: sharvari,
     name: "Sharvari Borse",
     info: "Workshop/Expert Talk",
+    insta:"https://www.instagram.com/sharvari1587?igsh=MTNvdnA1eXN0YWZqOA==",
+    linkedin:"https://in.linkedin.com/in/sharvari-borse-38a88024a",
+    mail:"sharvariborse03@gmail.com",
+  
   },
   {
     id: 16,
     img: srushti,
     name: "Srushti Nikham",
     info: "Workshop/Expert Talk",
+    insta:"",
+    linkedin:"",
+    mail:"",
+  
   },
   {
     id: 17,
     img: sanika,
     name: "Sanika Mahanjan",
     info: "Discipline Committee",
+    insta:"https://www.instagram.com/mahajan_sanika_72?igsh=NWh4bWhvNnVnbHBz",
+    linkedin:"www.linkedin.com/in/sanika-mahajan-8896a622b",
+    mail:"sanikamahajan03@gmail.com",
+  
   },
   {
     id: 18,
     img: roshani,
     name: "Roshani Amrutkar",
     info: "Creatives",
+    insta:"https://www.instagram.com/roshaniamrutkar14?igsh=MWV0eGxoanQxdGE2Yg==",
+    linkedin:"https://www.linkedin.com/in/roshani-amrutkar-15039b22a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    mail:"roshaniamrutkar14@gmail.com",
+  
   },
   {
     id: 19,
     img: deshna,
     name: "Deshna Shah",
     info: "Core Member",
+    insta:"https://www.instagram.com/_deshna_shah_27?igsh=MXNsYXMxcjVhMDlhNw==",
+    linkedin:"https://www.linkedin.com/in/deshna-shah-2602b0253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    mail:"deshnashah03@gmail.com",
+  
   },
   {
     id: 20,
     img: raksha,
     name: "Raksha Aage",
     info: "Core Member",
+    insta:"https://www.instagram.com/_raksha__21?igsh=aWtkNXlhYjI5cTg=",
+    linkedin:"https://www.linkedin.com/in/raksha-aage",
+    mail:"aageraksha21@gmail.com",
+  
   },
   {
     id: 21,
     img: komal,
     name: "Komal Attarde",
     info: "Core Member",
+    insta:"https://www.instagram.com/_komalll.04__?igsh=YmszZmp0ZGppYzg=",
+    linkedin:"https://www.linkedin.com/in/komal-attarde-43a9aa228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    mail:"komalattarde04@gmail.com",
+  
   },
   {
     id: 22,
     img: pritam,
     name: "Pritam Gaikwad",
     info: "Core Member",
+    insta:"https://www.instagram.com/_pritam.27?igsh=amVwZ2xjdnN6MmFo",
+    linkedin:"https://www.linkedin.com/in/pritam-gaikwad-58ab332a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    mail:"gaikwadpritamk23@gmail.com",
+  
   },
   {
     id: 23,
     img: bhakti,
     name: "Bhakti Joshi",
     info: "Core Member",
+    insta:"",
+    linkedin:"",
+    mail:"",
+  
   },
   {
     id: 24,
     img: harsh,
     name: "Harsh Mahale",
     info: "Core Member",
+    insta:"https://www.instagram.com/harsh_.075?igsh=OXB2OHhoYzZ5eDky",
+    linkedin:"https://www.linkedin.com/in/harsh-mahale-7a53b6277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    mail:"harshmahale0@gmail.com",
+  
   },
   {
     id: 25,
     img: rashmi,
     name: "Rashmi Patil",
     info: "Core Member",
+    insta:"",
+    linkedin:"",
+    mail:"",
+  
   },
 ];
 
@@ -257,7 +356,7 @@ const Members = () => {
         <Slider {...settings}>
           {membersData.map((memb) => (
             <div key={memb.id} className="mb-14">
-              <Card name={memb.name} img={memb.img} info={memb.info} />
+              <Card name={memb.name} img={memb.img} info={memb.info} insta={memb.insta} linkedin={memb.linkedin} mail={memb.mail} />
             </div>
           ))}
         </Slider>

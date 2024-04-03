@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Loader from "./components/loader";
 import Gallery from "./components/Gallery";
 import GalleryDsply from "./components/GalleryDsply";
+import { animateScroll as scroll } from "react-scroll";
 function App() {
   const [showLoader, setShowLoader] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -21,17 +22,23 @@ function App() {
       setProgress(100);
       setTimeout(() => {
         setShowLoader(false);
-        document.body.classList.remove('disable-scroll'); // Enable scrolling
-        document.querySelectorAll('.yarl-container *').forEach(element => {
-          element.style.cursor = 'auto';
-        });
-      }, 1000); // Show loader for 2 seconds
-    }, 1500); // Simulating loading time
+        document.body.classList.remove('disable-scroll'); 
+      }, 1000);
+    }, 1500);
   }, []);
+
+    useEffect(()=>{
+      setProgress(40);
+      setTimeout(()=>{
+        setProgress(100);
+      },1500);
+      scroll.scrollToTop();
+    },[]);
+
 
   useEffect(() => {
     if (showLoader) {
-      document.body.classList.add('disable-scroll'); // Disable scrolling
+      document.body.classList.add('disable-scroll');
     }
   }, [showLoader]);
 
