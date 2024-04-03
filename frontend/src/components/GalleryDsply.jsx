@@ -13,22 +13,29 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-import Photosvalue from './photos'
+import Photosvalue from "./photos";
 
-const GalleryDsply =() =>{
+const GalleryDsply = () => {
   const [index, setIndex] = useState(-1);
 
   return (
     <div className="gallery mx-5">
       <div className="relative  justify-center my-7 items-center text-center">
         <a>
-          <h2 className="sm:text-4xl md:text-6xl lg:text-9xl font-sans font-light text-indigo-900 ">Gallery          </h2>
+          <h2 className="sm:text-4xl md:text-6xl lg:text-9xl font-sans font-light text-indigo-900 ">
+            Gallery{" "}
+          </h2>
         </a>
       </div>
-      <PhotoAlbum photos={Photosvalue} layout="rows" targetRowHeight={150} onClick={({ index }) => setIndex(index)} />
+      <PhotoAlbum
+        photos={Photosvalue} //using photos from photo js
+        layout="rows"
+        targetRowHeight={300}
+        onClick={({ index }) => setIndex(index)}
+      />
 
       <Lightbox
-        slides={Photosvalue}
+        slides={slides} //using slides from data js
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
@@ -37,6 +44,6 @@ const GalleryDsply =() =>{
       />
     </div>
   );
-}
+};
 
 export default GalleryDsply;

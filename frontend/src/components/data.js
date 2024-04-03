@@ -8,6 +8,10 @@ export const slides = [
     title: "DSBDA",
   },
   {
+    src: "/events/dsa.jpg",
+    title: "DSA Mini Project Competition",
+  },
+  {
     src: "/events/engineersday.jpg",
     title: "Engineers Day",
   },

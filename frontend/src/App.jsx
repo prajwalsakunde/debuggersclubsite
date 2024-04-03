@@ -6,7 +6,7 @@ import AnimCursor from "./components/Animatedcursor";
 import Members from "./components/members";
 import Eventpg from "./components/Eventpg";
 import Contactpg from "./components/Contactpg";
-import LoadingBar from 'react-top-loading-bar'
+import LoadingBar from "react-top-loading-bar";
 import Footer from "./components/Footer";
 import Loader from "./components/loader";
 import Gallery from "./components/Gallery";
@@ -26,7 +26,7 @@ function App() {
       setProgress(100);
       setTimeout(() => {
         setShowLoader(false);
-        document.body.classList.remove('disable-scroll'); 
+        document.body.classList.remove("disable-scroll");
       }, 1000);
     }, 1500);
   }, []);
@@ -41,7 +41,7 @@ function App() {
 
   useEffect(() => {
     if (showLoader) {
-      document.body.classList.add('disable-scroll');
+      document.body.classList.add("disable-scroll");
     }
   }, [showLoader]);
 
@@ -96,7 +96,7 @@ function App() {
 
       <NavBar />
       <LoadingBar
-        color='#FF204E'
+        color="#FF204E"
         progress={progress}
         onLoaderFinished={() => setProgress(0)}
       />
@@ -105,7 +105,7 @@ function App() {
       <Eventpg />
       <Members />
       {/* <Gallery/> */}
-      {/* <GalleryDsply /> */}
+      <GalleryDsply />
       <Contactpg />
       <Footer />
     </div>
