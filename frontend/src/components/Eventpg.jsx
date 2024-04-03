@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import experttalkgate from "../assets/events/experttalkgate.jpg";
-import teachers from "../assets/events/teachersday.png";
+import teachers from "../assets/events/teachersday.jpg";
 import codeefiesta from "../assets/events/codeefiesta.jpg";
 import Engineerday from "../assets/events/engineersday.jpg";
 import halktalk from "../assets/events/halktalk.jpg";
