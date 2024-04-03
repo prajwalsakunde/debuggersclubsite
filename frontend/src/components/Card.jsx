@@ -10,7 +10,7 @@ const Card = ({ name, img, info ,insta , linkedin , mail }) => {
       <div className="image">
         <img src={img} className='rounded-full ' alt={name} /> 
       </div>
-      <div className="card-info mb-5 ">
+      <div className="card-info md:mb-5  ">
         <span className='pb-2 '>{name}</span>
         <p>{info}</p>
       </div>

@@ -6,8 +6,8 @@ import twitter from "../assets/twitter.png"
 
 const Footer = () => {
   return (
-    <footer className="relative flex flex-col items-center bg-black text-white">
-      <div className="relative flex gap-20 flex-row pt-10">
+    <footer className="relative flex flex-col items-center p bg-black text-white">
+      <div className="relative flex gap-10 md:gap-20 flex-row pt-10">
         <section className="flex flex-row justify-center items-center">
           <a
             href="https://www.instagram.com/debuggersclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
@@ -87,7 +87,7 @@ const Footer = () => {
       <div className="relative lg:mx-12 mt-6 w-11/12 h-px bg-gray-300">
         <br />
       </div>
-      <div className="relative flex flex-col justify-center items-center font-inter font-medium py-7 sm:p-8 lg:p-5 text-7xl sm:text-8xl md:text-9xl xl:text-11xl" >
+      <div className="relative flex flex-col justify-center items-center font-inter font-medium py-7 sm:p-8 lg:p-5 text-5xl sm:text-8xl md:text-9xl xl:text-11xl" >
         <a>
         Debuggers'
         </a>
