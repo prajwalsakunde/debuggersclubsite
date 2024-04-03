@@ -86,3 +86,14 @@
   .card:hover .image {
     transform: scale(1) translate(0%,-15%);
   }
+
+  @media screen and (max-width: 480px) {
+    .card-info span {
+      font-size: 15px;
+      gap: 10px;
+    }
+  
+    .card-info p {
+      font-size: 7px;
+    }
+  }

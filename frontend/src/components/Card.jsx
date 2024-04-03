@@ -11,7 +11,7 @@ const Card = ({ name, img, info ,insta , linkedin , mail }) => {
         <img src={img} className='rounded-full ' alt={name} /> 
       </div>
       <div className="card-info mb-5 ">
-        <span className='pb-2  sm:text-sm md:text-base lg:text-xl '>{name}</span>
+        <span className='pb-2 '>{name}</span>
         <p>{info}</p>
       </div>
       <div className="relative justify-center w-60 h-40  lg:w-full lg:h-full flex gap-5 md:gap-10 flex-row ">
@@ -27,7 +27,7 @@ const Card = ({ name, img, info ,insta , linkedin , mail }) => {
               
               fill="currentColor"
               stroke="currentColor"
-              className="w-7 h-7" />
+              className="w-4 h-4 md:w-7 md:h-7" />
           
           </a>
         </section>
@@ -43,7 +43,7 @@ const Card = ({ name, img, info ,insta , linkedin , mail }) => {
               
               fill="currentColor"
               stroke="currentColor"
-              className="w-7 h-7" />
+              className="w-4 h-4 md:w-7 md:h-7" />
           
           </a>
         </section>
@@ -58,7 +58,7 @@ const Card = ({ name, img, info ,insta , linkedin , mail }) => {
               
               fill="currentColor"
               stroke="currentColor"
-              className="w-7 h-7" />
+              className="w-4 h-4 md:w-7 md:h-7" />
           
           </a>
         </section>
