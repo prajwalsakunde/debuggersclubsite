@@ -44,7 +44,7 @@ const membersData = [
     img: vedant,
     name: "Vedant Patil",
     info: "Placement Coordinator",
-    insta:"https://www.instagram.com/vedd_?igsh=NHBxNWxrcXk5YXY2",
+    insta:"https://www.instagram.com/vedd___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     linkedin:"https://www.linkedin.com/in/vedant-patil-b42b1925b/",
     mail:"vedantp2509@gmail.com",
   
