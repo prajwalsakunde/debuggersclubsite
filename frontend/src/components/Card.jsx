@@ -34,7 +34,7 @@ const Card = ({ name, img, info ,insta , linkedin , mail }) => {
         
       <section className="flex flex-row justify-center items-center">
           <a
-            href={mail}
+            href={`mailto:${mail}`}
             target="_self"
             className="group flex justify-center text-white font-semibold hover:-translate-y-3  transition-all d1ration-500"
           >

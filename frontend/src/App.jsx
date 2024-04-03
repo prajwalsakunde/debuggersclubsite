@@ -11,14 +11,17 @@ import Footer from "./components/Footer";
 import Loader from "./components/loader";
 import Gallery from "./components/Gallery";
 import GalleryDsply from "./components/GalleryDsply";
+import Popup from "./components/Popup"; // Import the Popup component
 import { animateScroll as scroll } from "react-scroll";
 import { Toaster } from 'react-hot-toast';
 import toast from "react-hot-toast";
 import eventss from './Imgs/Equinox.jpg';
+
 function App() {
   const [showLoader, setShowLoader] = useState(true);
   const [progress, setProgress] = useState(0);
   const [toastShown, setToastShown] = useState(false);
+  const [showPopup, setShowPopup] = useState(false); // State variable to manage popup visibility
 
   useEffect(() => {
     // Simulate loading process
@@ -27,6 +30,8 @@ function App() {
       setTimeout(() => {
         setShowLoader(false);
         document.body.classList.remove("disable-scroll");
+        // Display the popup after the site has loaded
+        setShowPopup(true);
       }, 1000);
     }, 1500);
   }, []);
@@ -81,6 +86,7 @@ function App() {
             </button>
           </div>
         </div>
+
       ), {
         duration: Infinity // Set duration to Infinity for persistent toast
       });
@@ -92,7 +98,7 @@ function App() {
       <AnimCursor />
 
       {showLoader && <Loader />}
-      {!showLoader && <Toaster position="top-center" />}
+      {!showLoader && <Toaster position="bottom-left" />}
 
       <NavBar />
       <LoadingBar
@@ -108,6 +114,9 @@ function App() {
       <GalleryDsply />
       <Contactpg />
       <Footer />
+
+      {/* Render Popup component if showPopup is true */}
+      {showPopup && <Popup />}
     </div>
   );
 }

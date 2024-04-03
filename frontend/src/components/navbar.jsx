@@ -107,7 +107,7 @@ function NavBar() {
               activeLink === "gallery" ? "underline font-semibold" : ""
             }`}
             >
-            <>
+            {/* <>
               <button
                 type="button"
                 onClick={() => setOpen(true)}
@@ -132,8 +132,8 @@ function NavBar() {
                 }}
                 slides={slides}
               />
-            </>
-            {/* Gallery */}
+            </> */}
+            Gallery
           </ScrollLink>
 
           <ScrollLink

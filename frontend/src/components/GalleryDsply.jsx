@@ -23,8 +23,11 @@ const GalleryDsply = () => {
       <div className="relative  justify-center my-7 items-center text-center">
         <a>
           <h2 className="sm:text-4xl md:text-6xl lg:text-9xl font-sans font-light text-indigo-900 ">
-            Gallery{" "}
+            Gallery
           </h2>
+          <p className="mt-4 sm:text-xl xl:text-2xl font-thin">
+          Explore our gallery featuring esteemed past members!
+          </p>
         </a>
       </div>
       <PhotoAlbum
