@@ -352,7 +352,7 @@ const Members = () => {
           </p>
         </a>
       </div>
-      <div className="relative w-1/2 h-screen m-6 mt-20 overflow-hidden">
+      <div className="relative w-1/2 h-screen m-4 mt-20 overflow-hidden">
         <Slider {...settings}>
           {membersData.map((memb) => (
             <div key={memb.id} className="mb-14">

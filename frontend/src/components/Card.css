@@ -84,5 +84,5 @@
     color: rgba(245, 249, 249, 0.776);
   }
   .card:hover .image {
-    transform: scale(1.6) translate(0%,-15%);
+    transform: scale(1) translate(0%,-15%);
   }
