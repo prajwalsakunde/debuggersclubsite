@@ -167,7 +167,7 @@ const Eventpg = () => {
   return (
     <div
       id="event1"
-      className="event1 flex flex-col justify-center items-center relative w-full h-2/3 sm:h-3/4 md:h-lvh overflow-hidden"
+      className="event1  flex flex-col justify-center items-center relative w-full h-2/3 sm:h-3/4 md:h-lvh overflow-hidden"
     >
       <div className="relative justify-center items-center text-center">
         <a>
