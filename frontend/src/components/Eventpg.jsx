@@ -167,23 +167,23 @@ const Eventpg = () => {
   return (
     <div
       id="event1"
-      className="event1 flex flex-col justify-center items-center relative w-full h-screen overflow-hidden"
+      className="event1 flex flex-col justify-center items-center relative w-full h-2/3 sm:h-3/4 md:h-lvh overflow-hidden"
     >
       <div className="relative justify-center items-center text-center">
         <a>
-          <h2 className="sm:text-4xl md:text-6xl lg:text-9xl font-sans font-light text-indigo-900 ">
+          <h2 className="text-4xl md:text-6xl lg:text-9xl font-sans font-light text-indigo-900 ">
             Events
           </h2>
-          <p className="mt-2 sm:text-xl xl:text-2xl font-thin">
+          <p className="mt-2 text-xl xl:text-2xl font-thin">
             Events of the Debuggers Club.
           </p>
         </a>
       </div>
-      <div className="relative w-5/6 h-screen m-6 mt-20 overflow-hidden">
+      <div className="relative w-4/5 h-1/2 sm:h-5/6  md:h-full md:w-2/3 md:m-6 sm:mt-20 overflow-hidden">
         <Slider {...settings}>
           {eventsData.map((event, index) => (
             <div
-              className="relative h-96 bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden perspective-1000px shadow-box transition-transform duration-600 ease-in-out transform-gpu"
+              className="relative bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden perspective-1000px shadow-box transition-transform duration-600 ease-in-out transform-gpu"
               key={event.id}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
@@ -191,14 +191,14 @@ const Eventpg = () => {
               <img
                 src={event.img}
                 alt={event.name}
-                className="w-full h-full transition-transform duration-600 ease-in-out transform-gpu"
+                className=" w-fit h-fit transition-transform duration-600 ease-in-out transform-gpu"
                 style={{
                   transform: hoverStates[index] ? "scale(0)" : "scale(1)",
                   opacity: hoverStates[index] ? 0 : 1,
                 }}
               />
               <div
-                className="absolute top-0 left-0 w-full h-full p-4 bg-gray-100 transform rotate-x-90 transform-origin-bottom transition-all duration-600 ease-in"
+                className="absolute top-0 left-0 w-full h-full p-4 bg-gray-100 transform rotate-x-90 transform-origin-bottom transition-all duration-600 ease-in-out "
                 style={{
                   transform: hoverStates[index]
                     ? "rotateX(0deg)"

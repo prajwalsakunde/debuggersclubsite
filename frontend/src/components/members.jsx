@@ -340,19 +340,19 @@ const Members = () => {
   return (
     <div
       id="member1"
-      className="member1 flex flex-col justify-center items-center relative w-full h-screen overflow-hidden"
+      className="member1 flex flex-col justify-center items-center relative w-full h-2/3 sm:h-3/4 md:h-lvh overflow-hidden"
     >
       <div className="relative justify-center items-center text-center">
         <a>
-          <h2 className="sm:text-4xl md:text-6xl lg:text-9xl font-sans font-light text-indigo-900 ">
+          <h2 className="text-4xl md:text-6xl lg:text-9xl font-sans font-light text-indigo-900 ">
             Committee
           </h2>
-          <p className="mt-2 sm:text-xl xl:text-2xl font-thin">
+          <p className="mt-2 text-xl xl:text-2xl font-thin">
             Members of the Debuggers Club 2023-24.
           </p>
         </a>
       </div>
-      <div className="relative w-1/2 h-screen m-4 mt-20 overflow-hidden">
+      <div className="relative w-1/2 h-96 sm:h-screen m-4 mt-20 overflow-hidden">
         <Slider {...settings}>
           {membersData.map((memb) => (
             <div key={memb.id} className="mb-14">

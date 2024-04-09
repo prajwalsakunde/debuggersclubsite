@@ -87,7 +87,7 @@ const Footer = () => {
       <div className="relative lg:mx-12 mt-6 w-11/12 h-px bg-gray-300">
         <br />
       </div>
-      <div className="relative flex flex-col justify-center items-center font-inter font-medium py-7 sm:p-8 lg:p-5 text-5xl sm:text-8xl md:text-9xl xl:text-11xl" >
+      <div className="relative flex flex-col justify-center items-center font-inter font-medium py-4 sm:py-7 sm:p-8 lg:p-5 text-6xl sm:text-8xl md:text-9xl xl:text-11xl" >
         <a>
         Debuggers'
         </a>

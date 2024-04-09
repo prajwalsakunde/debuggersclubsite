@@ -6,7 +6,7 @@ import linkedinimg from "../assets/linkedin.png"
 
 const Card = ({ name, img, info ,insta , linkedin , mail }) => {
   return (
-    <div className="card w-11/12 h-11/12 lg:w-12/12">
+    <div className="card w-11/12 h-11/12 md:w-full  ">
       <div className="image">
         <img src={img} className='rounded-full ' alt={name} /> 
       </div>
@@ -14,7 +14,7 @@ const Card = ({ name, img, info ,insta , linkedin , mail }) => {
         <span className='pb-2 '>{name}</span>
         <p>{info}</p>
       </div>
-      <div className="relative justify-center w-60 h-40  lg:w-full lg:h-full flex gap-5 md:gap-10 flex-row ">
+      <div className="relative justify-center w-60 h-40  lg:w-full lg:h-full flex gap-5 sm:gap-7 md:gap-10 flex-row ">
       
       <section className="flex flex-row justify-center items-center">
           <a
