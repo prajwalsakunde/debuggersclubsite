@@ -100,7 +100,7 @@ function NavBar() {
             to="gallery"
             spy={true}
             smooth={true}
-            offset={-90}
+            offset={-120}
             duration={500}
             onClick={() => handleLinkClick("gallery")}
             className={`sm:text-sm md:text-base xl:text-lg font-extralight hover:font-semibold hover:text-black lg:mx-14 md:mx-10 ${
